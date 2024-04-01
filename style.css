@@ -250,7 +250,7 @@ footer{
   line-height: 10px;
 }
 .row{
-  display: flex;
+  display: center;
   width: 100%;
   color: white;
   justify-content: space-between;
