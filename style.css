@@ -236,36 +236,24 @@ h4.panel-title {
 
 /* Footer CSS */
 *{
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
 }
 
-footer{
-  background-color: #111;
-  padding: 30px 0;
-  width: 100%;
-  bottom: 0;
-  font-size: 9px;
-  line-height: 10px;
-}
 .row{
-  display: center;
+  display: flex;
   width: 100%;
-  color: white;
+  color: rgb(255, 255, 255);
   justify-content: space-between;
+  padding: 10px;
 }
 .col{
   flex-basis: 50%;
   padding: 10px;
-  font-size: 15px;
 }
 .logo{
-  width: 150px;
   margin-bottom: 0px;
   position: relative;
   float:left;
-
 }
 .col h3{
   width: fit-content;
@@ -275,8 +263,51 @@ footer{
   width: fit-content;
   margin: 10px 0;
 }
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  background-image: linear-gradient(to left, #162067 0%, #3fd18f 100%);
+  padding: 7px 15px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+.input-box{
+  position: relative;
+  border-bottom: 1px solid #162938;
+  color: white;
+}
+.input-box label {
+  position: -2px;
+  pointer-events: none;
+}
+.input-box input:focus~label,
+.input-box input:valid~label {
+  top: -5px;
+}
+.input-box input {
+  background: transparent;
+  border-style: solid whitesmoke;
+  outline: none;
+  font-size: 1em;
+  font-weight: 600;
+  color: white;
+}
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: silver;
+}
 .footer__container{
   background-color: #111;
 }
-
-  
